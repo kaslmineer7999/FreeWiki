@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>FreeWiki - Freedom Wiki - Create Page</title>
+	</head>
+	<body>
+		<form action="/cgi-bin/createpage.cgi" method="POST">
+			<label for="pagename">Page Name: </label>
+			<input type="text" id="pagename" name="pagename" required=""/><br><br>
+			<label for="pagecontent">Page Content: <br></label>
+			<textarea cols="80" rows="25" id="pagecontent" name="pagecontent" required="">
+<h1>title</h1>
+<p>test</p></textarea><br>
+			<button type="submit"><span class="fa fa-chevron-right"></span> Submit Page</button>
+		</form>
+	</body>
+</html>
